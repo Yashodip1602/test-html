@@ -1,0 +1,426 @@
+<html>
+
+<head>
+    <title>python liberies</title>
+    <style>
+        body {
+            background-color: #eaf4ff;
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            line-height: 1.9;
+            color: #333333;
+        }
+
+        h1 {
+            color: #ffffff;
+            background-color: #1565c0;
+            text-align: center;
+            padding: 2px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: #1565c0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        pre {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 15px;
+            border-radius: 7px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        th {
+            background-color: #1565c0;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eaf2ff;
+        }
+
+        tr:hover {
+            background-color: #d2e5ff;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+        }
+
+        .logout {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            color: #1565c0;
+            text-decoration: none;
+        }
+
+        .logout:hover {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <a href="index.html" class="logout" title="Logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+    <a href="#1.Math">1.Math</a><br>
+    <a href="#2.DateTime">2.DateTime<a><br>
+            <a href="#3.OS">3.OS</a><br>
+            <a href="#4.NumPy">4.NumPy </a><br>
+            <a href="#5.Pandas">5.Pandas<a><br>
+
+
+                    <h1 id="1.Math">
+                        <p align="center">1.Math
+                    </h1>
+                    </p>
+                    <br>
+                    - The Math Library is a built-in Python library used to perform mathematical calculations. <br><br>-
+                    It provides functions for square roots, powers, factorials, rounding numbers, and other mathematical
+                    operations.<br><br>
+
+                    <b><i>Uses:</i></b> Scientific calculations, solving mathematical problems, and performing numerical
+                    operations.<br>
+
+
+
+                    <i>Syntax:</i>
+                    import math
+
+                    <h3>
+                        <p align="center">Important functions
+                    </h3>
+                    </p>
+                    <p align="center">
+                        <table border="1">
+                            <tr>
+                                <th>
+                                    Function</th>
+                                <th> Use</th>
+                                <th>Example output </th>
+                            <tr>
+                                <td>math.sqrt(25)</td>
+                                <td> Square root </td>
+                                <td> 5.0</td>
+                            </tr>
+                            <tr>
+                                <td>math.pow(2, 3)</td>
+                                <td> Power </td>
+                                <td>8.0</td>
+                            </tr>
+                            <tr>
+                                <td>math.ceil(4.2)</td>
+                                <td> Round up </td>
+                                <td>5
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>math.floor(4.8)</td>
+                                <td> Round down </td>
+                                <td>4
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>math.factorial(5)</td>
+                                <td>Factorial </td>
+                                <td>120
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>math.pi</td>
+                                <td> Value of pi</td>
+                                <td> 3.14159....
+                            </tr>
+                            </td>
+                    </p>
+                    </table><br>
+                    <pre>
+eg.
+import math
+print(math.sqrt(16))
+print(math.factorial(4))
+
+Output:
+4.0
+24
+</pre>
+
+
+                    <h1 id="2.DateTime">
+                        <p align="center">2.DateTime
+                    </h1>
+                    </p>
+
+
+                    - The Datetime Library is a built-in Python library used to work with dates and times.<br> <br>- It
+                    helps us get the current date and time, calculate time differences, and format dates.<br><br>
+
+                    <i><b>Uses:</i></b> Managing dates, scheduling events, calculating age, and handling time-related
+                    operations.<br>
+
+
+
+                    <h3 align="center">Important functions</h3>
+                    <table border="1" align="center">
+                        <th> Function </th>
+                        <th> Use </th>
+                        <tr>
+                            <td> datetime.now()</td>
+                            <td> Gets the current date and time </td>
+                        </tr>
+                        <tr>
+                            <td>date.today()</td>
+                            <td> Gets today's date
+                        </tr>
+                        </td>
+                        <tr>
+                            <td>strftime()</td>
+                            <td> Converts date/time into formatted text
+                        </tr>
+                        </td>
+                        <tr>
+                            <td>timedelta()</td>
+                            <td> Adds or subtracts time
+                        </tr>
+                        </td>
+                    </table>
+                    <pre> eg.1:
+
+import datetime
+print(datetime.datetime.now())
+
+Output (example):
+2026-10-17 13:18:00
+
+eg 2: Today's date
+
+import datetime
+print(datetime.date.today())
+
+Output (example):
+2026-10-17</pre>
+
+
+                    <h1 id="3.OS" align="center">3.OS</h1>
+                    - The OS Library is a built-in Python library used to interact with the operating system. <br><br>-
+                    It helps manage files, folders, directories, and system-related tasks.<br><br>
+
+                    <i><b>Uses:</b></i> Creating folders, listing files, renaming files, deleting files, and getting the
+                    current working directory.
+                    <br>
+
+
+                    <h3 align="center"> Important functions</h3>
+                    <p align="center">
+                        <table border="1">
+                            <th> Function </th>
+                            <th> Use </th>
+                            <tr>
+                                <td>os.getcwd()</td>
+                                <td> Gets the current directory
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>os.mkdir()</td>
+                                <td> Creates a new folder
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>os.listdir()</td>
+                                <td> Lists files and folders
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>os.remove()</td>
+                                <td> Deletes a file
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>os.rename()</td>
+                                <td> Renames a file
+                            </tr>
+                            </td>
+                        </table>
+                        <pre>eg.
+import os
+print(os.getcwd())
+
+Output (example):
+/home/user
+
+This displays the current working directory.
+</pre>
+
+
+                        <h1 align="center" id="4.NumPy">4.NumPy</h1>
+
+                        - NumPy stands for Numerical Python.<br><br> - It is a Python library used for numerical
+                        calculations and working with arrays.<br> <br>- It performs mathematical operations on large
+                        amounts of data efficiently.<br><br>
+
+                        <b><i>Uses:</b></i> Array operations, mathematical calculations, scientific computing, and data
+                        analysis<br>
+
+                        <h3 align="center">Important functions</h3>
+                        <p align="center">
+                        <table border="1">
+                            <th> Function </th>
+                            <th> Use </th>
+                            <tr>
+                                <td>np.array()</td>
+                                <td> Creates an array
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>np.mean()</td>
+                                <td> Calculates the average
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>np.max()</td>
+                                <td>Finds the maximum value
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>np.min()</td>
+                                <td> Finds the minimum value
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>np.sum()</td>
+                                <td> Calculates the sum
+                            </tr>
+                            </td>
+                        </table>
+                        <pre>
+eg.
+import numpy as np
+numbers = np.array([10, 20, 30, 40])
+print(np.sum(numbers))
+print(np.mean(numbers))
+
+Output:
+100
+25.0</pre>
+
+
+                        <h1 align="center" id="5.Pandas">5.Pandas </h1>
+                        - Pandas is a Python library used to organize, manipulate, and analyze data.<br><br>- It
+                        provides data structures such as Series and DataFrame to work with tabular data.<br><br>
+
+                        <i><b>Uses:</i></b> Data analysis, handling CSV and Excel files, organizing data, and cleaning
+                        datasets<br>
+
+                        <h3 align="center">Important functions</h3>
+                        <p align="center">
+                        <table border="1">
+                            <th> Function </th>
+                            <th> Use </th>
+                            <tr>
+                                <td>pd.DataFrame()</td>
+                                <td> Creates a table
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>pd.read_csv()</td>
+                                <td> Reads a CSV file
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>df.head()</td>
+                                <td> Displays the first 5 rows
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>df.describe()</td>
+                                <td> Shows statistical information
+                            </tr>
+                            </td>
+                            <tr>
+                                <td>df.drop()</td>
+                                <td> Removes rows or columns
+                            </tr>
+                            </td>
+                        </table>
+                        <pre>
+eg.
+import pandas as pd
+data = {
+    "Name": ["Amit", "Priya"],
+    "Age": [20, 22]
+}
+df = pd.DataFrame(data)
+print(df)
+
+Output:
+    Name  Age
+0   Amit   20
+1  Priya   22
+</pre>
+                        <!-- <br>
+
+                        <a href="string & functions .html">
+                            <button> Back<button>
+                        </a> -->
+
+
+
+                        <div class="nav-buttons">
+                            <a href="sting&function.html">
+                                <button>Back page</button>
+                            </a>
+                            <!-- <a href="string & functions .html">
+                                <button>Next page</button>
+                            </a> -->
+                        </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #FF1493;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+         
+        .container{
+            background:white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender{
+            margin: 10px 0;
+        }
+
+        .gender input{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2><i><font color="voilet">REGISTRATION FORM</font></i></h2>
+
+    <form action="aboutPython.html">
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="tel" placeholder="Class" required>
+
+        <input type="date" required>
+
+        <div class="gender">
+            <label>
+                <input type="radio" name="gender"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender"> Female
+            </label>
+             <label>
+                <input type="radio" name="gender"> Other
+            </label>
+        </div>
+
+        <input type="password" placeholder="Password" required>
+
+        <input type="password" placeholder="Confirm Password" required>
+
+       <button type="submit">Register</button>
+    </form>
+    
+</div>
+<!-- <br><br>
+<a  href="about python.html">
+    <button>Next page </button>
+</a>
+<br><br>
+ <a href="logo.html">
+    <button>Back page</button>
+</a><br><br> -->
+</body>
+</html>
